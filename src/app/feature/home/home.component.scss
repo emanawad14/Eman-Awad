@@ -1,0 +1,49 @@
+
+
+
+
+.social
+{
+    background-color: #436699;
+    height: 60px;
+    width: 60px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+
+    &:hover
+    {
+        background-color: #156E5D;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.heading {
+ 
+   cursor: pointer;
+  
+   
+    &:hover + .colored-line {
+        width: 300px;
+     
+        
+      }
+}
+
+.colored-line {
+    height: 4px;
+    width: 100px;
+    border-radius: 9999px;
+    cursor: pointer;
+    background: linear-gradient(to right, #156E5D, #3b82f6, #1CB272); 
+    
+    transition: width 0.3s ease-in-out;
+
+    
+  
+   
+}
