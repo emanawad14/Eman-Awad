@@ -8,8 +8,7 @@ import {  NgxParticlesModule } from "@tsparticles/angular"; // ✅ تأكد من
 import { loadSlim } from "@tsparticles/slim"; // ✅ تحميل المكتبة المصغرة
 import { Engine, Container , MoveDirection, OutMode } from "@tsparticles/engine"; // ✅ إضافة المحرك والجسيمات
 import { loadFull } from 'tsparticles';
-import { HomeComponent } from "./feature/home/home.component";
-import { AboutComponent } from "./feature/about/about.component";
+
 
 declare function initFlowbite(): void;
 
@@ -26,7 +25,7 @@ export class AppComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     if (typeof window !== 'undefined') {
-      const { tsParticles } = await import("@tsparticles/engine"); // ✅ استخراج `tsParticles` بشكل صحيح
+      const { tsParticles } = await import("@tsparticles/engine"); 
       await loadSlim(tsParticles);
       this.flowbiteService.loadFlowbite(() => {
         initFlowbite();
